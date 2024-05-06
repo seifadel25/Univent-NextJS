@@ -4,7 +4,7 @@ import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Navbar from "./components/navbar";
 const inter = Inter({ subsets: ["latin"] });
-
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Univent",
   description:
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NextUIProvider>
           <Navbar />
-          {children}
+          {children} <Analytics />
         </NextUIProvider>
       </body>
     </html>
