@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -10,13 +11,12 @@ import {
   NavbarMenuToggle,
 } from "@nextui-org/navbar";
 import { Link, Button } from "@nextui-org/react";
-import { AcmeLogo } from "./AcmeLogo";
 import myLogo from "../../public/images/Logo1.png";
 import Image from "next/image";
 import DarkModeToggle from "./DarkModeToggle";
 
 export default function navbar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = ["home", "products", "Clients", "About us", "Contact us"];
   return (
