@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
-import Navbar from "./components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 import { Analytics } from "@vercel/analytics/react";
+import NavbarComp from "./components/navbar";
 export const metadata: Metadata = {
   title: "Univent",
   description:
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NextUIProvider>
-          <Navbar />
+          <NavbarComp />
           {children} <Analytics />
         </NextUIProvider>
       </body>

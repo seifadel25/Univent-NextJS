@@ -15,7 +15,7 @@ import myLogo from "../../public/images/Logo1.png";
 import Image from "next/image";
 import DarkModeToggle from "./DarkModeToggle";
 
-export default function navbar() {
+export default function NavbarComp() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = ["home", "products", "Clients", "About us", "Contact us"];
