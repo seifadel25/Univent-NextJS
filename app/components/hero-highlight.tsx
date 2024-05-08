@@ -2,6 +2,7 @@
 import { cn } from "../utils/cn";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
+import { ImagesSlider } from "./images-slider";
 
 export const HeroHighlight = ({
   children,
@@ -29,25 +30,45 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative h-[40rem] flex items-center bg-white dark:bg-black justify-center w-full group",
+        "relative h-[80svh] flex items-center bg-white dark:bg-black justify-center w-full group",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
     >
-      <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
+      {/* <div className="flex justify-around gap-y-5 absolute flex-row flex-wrap">
+        <Image src={H1Image} width={400} alt="test" className="bg-black" />
+        <Image src={H1Image} width={400} alt="test" className="bg-black" />
+        <Image src={H1Image} width={400} alt="test" className="bg-black" />
+        <Image src={H1Image} width={400} alt="test" className="bg-black" />
+        <Image src={H1Image} width={400} alt="test" className="bg-black" />
+        <Image src={H1Image} width={400} alt="test" className="bg-black" />
+      </div> */}
+
+      <div className="absolute inset-0 opacity-80 bg-neutral-100 dark:bg-neutral-100  pointer-events-none">
+        <ImagesSlider
+          images={[
+            "/images/Hero/jpeg-optimizer_5.png",
+            "/images/Hero/jpeg-optimizer_20 (2).png",
+            "/images/Hero/jpeg-optimizer_kl.jpg",
+            "/images/Hero/jpeg-optimizer_fan 7.png",
+          ]}
+        >
+          <div></div>
+        </ImagesSlider>
+      </div>
       <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none bg-white dark:bg-white   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-50"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
+              50px circle at ${mouseX}px ${mouseY}px,
               black 0%,
               transparent 100%
             )
           `,
           maskImage: useMotionTemplate`
             radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
+              100px circle at ${mouseX}px ${mouseY}px,
               black 0%,
               transparent 100%
             )
@@ -86,7 +107,7 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500`,
+        `relative inline-block pb-1   px-3 rounded-r-lg bg-gradient-to-r from-blue-400 to-blue-700 dark:from-blue-700 dark:to-blue-900`,
         className
       )}
     >

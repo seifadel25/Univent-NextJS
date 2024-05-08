@@ -1,4 +1,4 @@
-"use client"; // Enable React hooks in Next.js
+"use client";
 
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,13 +26,14 @@ export default function DarkModeToggle() {
     <button
       onClick={toggleDarkMode}
       aria-label="Toggle Dark Mode"
-      className={`w-16 h-8 flex items-center px-1 rounded-full transition-colors ${
-        isDarkMode ? "bg-blue-600" : "bg-gray-300"
+      aria-pressed={isDarkMode}
+      className={`lg:w-16 w-10 h-6 lg:h-8 flex items-center px-1 rounded-full transition-colors ${
+        isDarkMode ? "bg-blue-900" : "bg-gray-300"
       }`}
     >
       <span
         className={`w-6 h-6 flex items-center justify-center bg-white rounded-full transition-transform transform ${
-          isDarkMode ? "translate-x-8" : "translate-x-0"
+          isDarkMode ? "lg:translate-x-8 translate-x-3" : "lg:translate-x-0 -translate-x-2"
         }`}
       >
         <FontAwesomeIcon

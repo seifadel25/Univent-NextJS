@@ -11,7 +11,7 @@ import {
   NavbarMenuToggle,
 } from "@nextui-org/navbar";
 import { Link, Button } from "@nextui-org/react";
-import myLogo from "../../public/images/Logo1.png";
+import myLogo from "../../public/images/myLogo.png";
 import Image from "next/image";
 import DarkModeToggle from "./DarkModeToggle";
 
@@ -28,7 +28,7 @@ export default function NavbarComp() {
         />
         <NavbarBrand>
           <Link href="/">
-            <Image src={myLogo} alt="Univent" width={100} height={100} />
+            <Image src={myLogo} alt="Univent" width={150} height={100} />
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -36,7 +36,7 @@ export default function NavbarComp() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link
-            className=" text-text-light dark:text-text-dark "
+            className=" text-text-light dark:text-text-dark md:text-base lg:text-xl"
             aria-current="page"
             href="/"
           >
@@ -45,19 +45,24 @@ export default function NavbarComp() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className=" text-text-light dark:text-text-dark "
+            className=" text-text-light dark:text-text-dark md:text-base lg:text-xl"
             href="/products"
           >
             Products
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className=" text-text-light dark:text-text-dark " href="#">
+          <Link className=" text-text-light dark:text-text-dark md:text-base lg:text-xl" href="#">
             Clients
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className=" text-text-light dark:text-text-dark " href="#">
+          <Link className=" text-text-light dark:text-text-dark md:text-base lg:text-xl" href="#">
+            Gallery
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className=" text-text-light dark:text-text-dark md:text-base lg:text-xl" href="#">
             About us
           </Link>
         </NavbarItem>
@@ -68,7 +73,7 @@ export default function NavbarComp() {
             as={Link}
             href="#"
             variant="flat"
-            className="text-white dark:bg-primary-dark bg-primary-light overflow-hidden rounded-lg"
+            className="text-white dark:bg-primary-dark bg-primary-light overflow-hidden rounded-lg "
           >
             Contact Us
           </Button>
