@@ -83,7 +83,23 @@ export default function HomePage() {
         </div>
       </div>
       {/* Certificates */}
-      <div></div>
+      <div className="bg-white dark:bg-black text-text-light dark:text-text-dark py-16">
+        <h2 className="text-center text-5xl py-16 font-bold  border-black dark:border-white">
+          Certificates
+        </h2>
+        <div className="grid grid-cols-12 gap-4">
+          <div className=" h-[300px] bg-blue-400 col-start-1 col-end-3">
+            <h1 className=" invisible hover:visible">bla bla 1</h1>
+          </div>
+          <div className=" h-[300px] bg-blue-700 ">
+            <h1>bla bla 2</h1>
+          </div>
+          <div className=" h-[300px] bg-blue-900 ">
+            <h1>bla bla 3</h1>
+          </div>
+          <h3></h3>
+        </div>
+      </div>
     </div>
   );
 }
