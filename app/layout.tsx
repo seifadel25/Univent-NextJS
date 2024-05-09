@@ -4,7 +4,7 @@ import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 const inter = Inter({ subsets: ["latin"] });
 import { Analytics } from "@vercel/analytics/react";
-import NavbarComp from "./components/navbar";
+import NavbarComp from "./components/Navbar";
 import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Univent",
