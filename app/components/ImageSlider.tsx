@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 interface ImageSliderProps {
   images: string[];
@@ -23,14 +24,16 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,centerMode:true
+          slidesToShow: 3,
+          centerMode: true,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          dots: false,centerMode:true
+          dots: false,
+          centerMode: true,
         },
       },
     ],
@@ -39,12 +42,16 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   return (
     <Slider {...settings}>
       {images.map((img, index) => (
-        <div key={index} className="flex flex-row justify-center">
-          <img
+        <div
+          key={index}
+          className="flex flex-row justify-center items-center h-full"
+        >
+          <Image
             className=" dark:bg-white"
             src={img}
+            width={200}
+            height={150}
             alt={`Slide ${index}`}
-            style={{ width: "200px", height: "150px" }}
           />
         </div>
       ))}

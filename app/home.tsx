@@ -88,28 +88,20 @@ export default function HomePage() {
           Certificates
         </h2>
         <div className="grid grid-cols-12 gap-4 mx-5">
-          <div className="relative h-[300px] bg-blue-400 col-span-2 overflow-hidden">
-            <h1 className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              bla bla 1
-            </h1>
+          <div className="relative h-[300px] bg-white col-span-2 overflow-hidden rounded-lg shadow-lg shadow-black/50">
             <div className="absolute inset-0 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
-              <p>Hover over me!</p>
+              bla bla 2
+            </div>
+            <div className="absolute inset-0  bg-red-400 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              bla bla 1
             </div>
           </div>
-          <div className="relative h-[300px] bg-blue-400 col-span-2 overflow-hidden">
-            <h1 className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              bla bla 1
-            </h1>
+          <div className="relative h-[300px] bg-white col-span-2 overflow-hidden rounded-lg shadow-lg shadow-black/50">
             <div className="absolute inset-0 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
-              <p>Hover over me!</p>
+              bla bla 2
             </div>
-          </div>
-          <div className="relative h-[300px] bg-blue-400 col-span-2 overflow-hidden">
-            <h1 className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0  bg-red-400 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
               bla bla 1
-            </h1>
-            <div className="absolute inset-0 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
-              <p>Hover over me!</p>
             </div>
           </div>
         </div>
