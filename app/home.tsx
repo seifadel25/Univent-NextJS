@@ -46,7 +46,7 @@ export default function HomePage() {
           <div className="md:w-1/2 text-2xl px-4">
             <p>
               Since 1979, Univent © became one of the most important companies
-              in the "Ventilation Fan" field. We continue in our development
+              in the Ventilation Fan field. We continue in our development
               journey using the latest engineering methods and international
               standards to achieve our vision. Univent offers a wide range of
               ventilation products for multiple applications, such as standard
@@ -83,21 +83,35 @@ export default function HomePage() {
         </div>
       </div>
       {/* Certificates */}
-      <div className="bg-white dark:bg-black text-text-light dark:text-text-dark py-16">
+      <div className="bg-gray-200 dark:bg-black text-text-light dark:text-text-dark py-16">
         <h2 className="text-center text-5xl py-16 font-bold  border-black dark:border-white">
           Certificates
         </h2>
-        <div className="grid grid-cols-12 gap-4">
-          <div className=" h-[300px] bg-blue-400 col-start-1 col-end-3">
-            <h1 className=" invisible hover:visible">bla bla 1</h1>
+        <div className="grid grid-cols-12 gap-4 mx-5">
+          <div className="relative h-[300px] bg-blue-400 col-span-2 overflow-hidden">
+            <h1 className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              bla bla 1
+            </h1>
+            <div className="absolute inset-0 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
+              <p>Hover over me!</p>
+            </div>
           </div>
-          <div className=" h-[300px] bg-blue-700 ">
-            <h1>bla bla 2</h1>
+          <div className="relative h-[300px] bg-blue-400 col-span-2 overflow-hidden">
+            <h1 className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              bla bla 1
+            </h1>
+            <div className="absolute inset-0 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
+              <p>Hover over me!</p>
+            </div>
           </div>
-          <div className=" h-[300px] bg-blue-900 ">
-            <h1>bla bla 3</h1>
+          <div className="relative h-[300px] bg-blue-400 col-span-2 overflow-hidden">
+            <h1 className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              bla bla 1
+            </h1>
+            <div className="absolute inset-0 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
+              <p>Hover over me!</p>
+            </div>
           </div>
-          <h3></h3>
         </div>
       </div>
     </div>
