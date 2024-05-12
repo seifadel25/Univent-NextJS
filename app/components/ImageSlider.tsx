@@ -3,16 +3,15 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 
 const ImageSlider = () => {
   const images = [
-    "/images/clients/Samsung.png",
-    "/images/clients/Elsweedy.png",
-    "/images/clients/Travco.png",
-    "/images/clients/Americana.png",
-    "/images/clients/TBS.jpg",
+    "/images/Clients/Samsung.png",
+    "/images/Clients/Elsweedy.png",
+    "/images/Clients/Travco.png",
+    "/images/Clients/Americana.png",
+    "/images/Clients/TBS.png",
   ];
 
   const settings = {
@@ -47,10 +46,7 @@ const ImageSlider = () => {
   return (
     <Slider {...settings} className="">
       {images.map((img, index) => (
-        <div
-          key={index}
-          className=""
-        >
+        <div key={index} className="">
           <Image
             className=" dark:bg-white"
             src={img}
