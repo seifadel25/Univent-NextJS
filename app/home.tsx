@@ -89,20 +89,32 @@ export default function HomePage() {
         </h2>
         <div className="grid grid-cols-12 gap-4 mx-5">
           <div className="relative h-[300px] bg-white col-span-2 overflow-hidden rounded-lg shadow-lg shadow-black/50">
-            <div className="absolute inset-0 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
-              bla bla 2
+            <div className="absolute inset-0 flex bg-white/50 items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
+              EOS Certificates
             </div>
-            <div className="absolute inset-0  bg-red-400 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              bla bla 1
-            </div>
+            <div
+              className="absolute inset-0  bg-white flex items-center justify-center opacity-10 hover:opacity-100 transition-opacity duration-300"
+              style={{
+                backgroundImage: "url('/images/Certificates/Main/EOS.jpeg')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+              }}
+            ></div>
           </div>
           <div className="relative h-[300px] bg-white col-span-2 overflow-hidden rounded-lg shadow-lg shadow-black/50">
-            <div className="absolute inset-0 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
-              bla bla 2
+            <div className="absolute inset-0 bg-white/50 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
+              We Are Official Distributor for Ruck-Germany
             </div>
-            <div className="absolute inset-0  bg-red-400 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              bla bla 1
-            </div>
+            <div
+              className="absolute inset-0   flex items-center justify-center opacity-10 hover:opacity-100 transition-opacity duration-300"
+              style={{
+                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
           </div>
         </div>
       </div>
