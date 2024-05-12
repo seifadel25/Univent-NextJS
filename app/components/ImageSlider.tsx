@@ -6,10 +6,15 @@ import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-interface ImageSliderProps {
-  images: string[];
-}
-const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
+const ImageSlider = () => {
+  const images = [
+    "/images/clients/Samsung.png",
+    "/images/clients/Elsweedy.png",
+    "/images/clients/Travco.png",
+    "/images/clients/Americana.png",
+    "/images/clients/TBS.jpg",
+  ];
+
   const settings = {
     dots: false,
     infinite: true,
@@ -40,11 +45,11 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   };
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="">
       {images.map((img, index) => (
         <div
           key={index}
-          className="flex flex-row justify-center items-center h-full"
+          className=""
         >
           <Image
             className=" dark:bg-white"

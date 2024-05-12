@@ -36,7 +36,7 @@ export default function NavbarComp() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link
-            className=" text-text-light dark:text-text-dark md:text-base lg:text-xl"
+            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
             aria-current="page"
             href="/"
           >
@@ -45,35 +45,44 @@ export default function NavbarComp() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className=" text-text-light dark:text-text-dark md:text-base lg:text-xl"
+            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
             href="/products"
           >
             Products
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className=" text-text-light dark:text-text-dark md:text-base lg:text-xl" href="#">
+          <Link
+            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+            href="#"
+          >
             Clients
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className=" text-text-light dark:text-text-dark md:text-base lg:text-xl" href="#">
-            Gallery
+          <Link
+            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+            href="#"
+          >
+            Certificates
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className=" text-text-light dark:text-text-dark md:text-base lg:text-xl" href="#">
+          <Link
+            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+            href="#"
+          >
             About us
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="overflow-hidden rounded-lg">
+        <NavbarItem className="overflow-hidden rounded-lg ">
           <Button
             as={Link}
             href="#"
             variant="flat"
-            className="text-white dark:bg-primary-dark bg-primary-light overflow-hidden rounded-lg "
+            className="text-white w-[40%] dark:bg-primary-dark bg-primary-light overflow-hidden rounded-lg "
           >
             Contact Us
           </Button>

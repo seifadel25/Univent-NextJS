@@ -4,13 +4,6 @@ import { CanvasRevealEffectDemo } from "./components/CanvasReveal.";
 import ImageSlider from "./components/ImageSlider";
 
 export default function HomePage() {
-  const images = [
-    "/images/clients/Samsung.png",
-    "/images/clients/Elsweedy.png",
-    "/images/clients/Travco.png",
-    "/images/clients/Americana.png",
-    "/images/clients/TBS.jpg",
-  ];
   return (
     <div>
       <div className="">
@@ -79,7 +72,7 @@ export default function HomePage() {
           Our Clients
         </h2>
         <div>
-          <ImageSlider images={images} />
+          <ImageSlider />
         </div>
       </div>
       {/* Certificates */}
@@ -87,7 +80,7 @@ export default function HomePage() {
         <h2 className="text-center text-5xl py-16 font-bold  border-black dark:border-white">
           Certificates
         </h2>
-        <div className="grid grid-cols-12 gap-4 mx-5">
+        <div className="grid grid-cols-4 md:grid-cols-10 mx-8 gap-4">
           <div className="relative h-[300px] bg-white col-span-2 overflow-hidden rounded-lg shadow-lg shadow-black/50">
             <div className="absolute inset-0 flex bg-white/50 items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
               EOS Certificates
@@ -98,6 +91,48 @@ export default function HomePage() {
                 backgroundImage: "url('/images/Certificates/Main/EOS.jpeg')",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "contain",
+                backgroundPosition: "center",
+              }}
+            ></div>
+          </div>
+          <div className="relative h-[300px] bg-white col-span-2 overflow-hidden rounded-lg shadow-lg shadow-black/50">
+            <div className="absolute inset-0 bg-white/50 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
+              We Are Official Distributor for Ruck-Germany
+            </div>
+            <div
+              className="absolute inset-0   flex items-center justify-center opacity-10 hover:opacity-100 transition-opacity duration-300"
+              style={{
+                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+          </div>
+          <div className="relative h-[300px] bg-white col-span-2 overflow-hidden rounded-lg shadow-lg shadow-black/50">
+            <div className="absolute inset-0 bg-white/50 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
+              We Are Official Distributor for Ruck-Germany
+            </div>
+            <div
+              className="absolute inset-0   flex items-center justify-center opacity-10 hover:opacity-100 transition-opacity duration-300"
+              style={{
+                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+          </div>
+          <div className="relative h-[300px] bg-white col-span-2 overflow-hidden rounded-lg shadow-lg shadow-black/50">
+            <div className="absolute inset-0 bg-white/50 flex items-center justify-center opacity-100 hover:opacity-0 transition-opacity duration-300">
+              We Are Official Distributor for Ruck-Germany
+            </div>
+            <div
+              className="absolute inset-0   flex items-center justify-center opacity-10 hover:opacity-100 transition-opacity duration-300"
+              style={{
+                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             ></div>
