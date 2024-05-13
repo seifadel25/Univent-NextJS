@@ -32,11 +32,13 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme() }} />
       </head>
       <body className={inter.className}>
-        <NextUIProvider>
-          <NavbarComp />
-          {children} <Analytics />
-          <Footer />
-        </NextUIProvider>
+        <div className="bg-white dark:bg-black">
+          <NextUIProvider>
+            <NavbarComp />
+            {children} <Analytics />
+            <Footer />
+          </NextUIProvider>
+        </div>
       </body>
     </html>
   );

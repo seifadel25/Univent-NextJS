@@ -80,7 +80,7 @@ export default function NavbarComp() {
         <NavbarItem className="overflow-hidden rounded-lg ">
           <Button
             as={Link}
-            href="#"
+            href="/contact"
             variant="flat"
             className="text-white w-[40%] dark:bg-primary-dark bg-primary-light overflow-hidden rounded-lg "
           >
