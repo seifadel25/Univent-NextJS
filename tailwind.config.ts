@@ -37,6 +37,7 @@ const config: Config = {
     },
   },
   plugins: [
+    require("tailwind-scrollbar"),
     addVariablesForColors,
     nextui(),
     function ({ matchUtilities, theme }: any) {

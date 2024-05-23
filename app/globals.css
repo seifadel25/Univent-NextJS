@@ -6,17 +6,24 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-color-1: #ffffff; /* Light mode color */
+  --background-color-2: #f0f0f0; /* Light mode color */
+  --background-color-3: #e5e5e5; /* Light mode color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --background-color-1: rgb(2, 6, 23); /* Dark mode color */
+  --background-color-2: rgb(0, 0, 0); /* Dark mode color */
+  --background-color-3: rgb(2, 6, 23); /* Dark mode color */
 }
+
 html {
-  transition: background-color 0.5s, color 0.5s;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
 }
 body {
   color: rgb(var(--foreground-rgb));

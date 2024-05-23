@@ -54,7 +54,7 @@ export default function NavbarComp() {
         <NavbarItem>
           <Link
             className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
-            href="#"
+            href="/Clients"
           >
             Clients
           </Link>
@@ -70,7 +70,7 @@ export default function NavbarComp() {
         <NavbarItem>
           <Link
             className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
-            href="#"
+            href="/About"
           >
             About us
           </Link>
