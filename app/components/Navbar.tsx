@@ -33,7 +33,7 @@ export default function NavbarComp() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         <NavbarItem>
           <Link
             className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
@@ -62,7 +62,7 @@ export default function NavbarComp() {
         <NavbarItem>
           <Link
             className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
-            href="#"
+            href="/Certificates"
           >
             Certificates
           </Link>
@@ -82,7 +82,7 @@ export default function NavbarComp() {
             as={Link}
             href="/contact"
             variant="flat"
-            className="text-white w-[40%] dark:bg-primary-dark bg-primary-light overflow-hidden rounded-lg "
+            className="w-[40%] overflow-hidden rounded-lg bg-primary-light text-white dark:bg-primary-dark "
           >
             Contact Us
           </Button>
@@ -111,7 +111,7 @@ export default function NavbarComp() {
         <NavbarMenuItem>
           <Link
             className="py-2 text-xl text-text-light dark:text-text-dark"
-            href="/products"
+            href="/Clients"
           >
             Clients
           </Link>
@@ -119,7 +119,15 @@ export default function NavbarComp() {
         <NavbarMenuItem>
           <Link
             className="py-2 text-xl text-text-light dark:text-text-dark"
-            href="/products"
+            href="/Certificates"
+          >
+            Certificates
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="py-2 text-xl text-text-light dark:text-text-dark"
+            href="/About"
           >
             About us
           </Link>
