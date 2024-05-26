@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -7,18 +8,19 @@ export default function Footer() {
         <div className=" flex w-4/12 flex-col items-center justify-center">
           <h3 className="pb-10 text-2xl font-bold">About Us</h3>
           <p className="text-sm font-bold text-gray-600 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            in nam, nobis nihil facilis fugiat sapiente hic ipsam cupiditate
-            harum.
+            At Univent, we are dedicated to placing Egyptian products at the
+            forefront of high-quality manufacturing. Our vision is to make "Made
+            in Egypt" a hallmark of excellence and superior craftsmanship, with
+            our products recognized and trusted worldwide.
           </p>
         </div>
         <div className="flex w-3/12 flex-col items-center justify-center">
           <h3 className="pb-10 text-2xl font-bold">Quick Links</h3>
-          <div className="text-base font-bold text-gray-600 dark:text-gray-400">
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
+          <div className="flex flex-col gap-y-2 text-center text-base font-bold text-gray-600 dark:text-gray-400">
+            <Link href="/products">Products</Link>
+            <Link href="/Clients">Clients</Link>
+            <Link href="/Certificates">Certificates</Link>
+            <Link href="/contact">Contact Us</Link>
           </div>
         </div>
         {/* <div className="flex w-1/6 flex-col">
@@ -43,11 +45,14 @@ export default function Footer() {
           </span>
         </div>
       </div>
-      <div className="flex w-full items-center justify-center">
+      <Link href="/" className="flex w-full items-center justify-center">
         <Image src={"/images/myLogo.png"} width={200} height={200} alt="Logo" />
-      </div>
-      <div className="flex w-full items-center justify-center">
-        <p> Copyright &copy; 2024 Univent</p>
+      </Link>
+      <div className="flex w-full items-center justify-center gap-x-2">
+        <p> Copyright &copy;2024 </p>
+        <Link href="/" className=" text-blue-900 dark:text-blue-200">
+          Univent
+        </Link>
       </div>
     </div>
   );

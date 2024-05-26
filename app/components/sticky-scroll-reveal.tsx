@@ -22,7 +22,7 @@ export default function StickyScroll({
   const progressBarHeight = useTransform(
     scrollYProgress,
     [0, 1],
-    ["0%", "100%"],
+    ["3%", "100%"],
   );
 
   // Use scroll progress to transform width and color
@@ -53,14 +53,14 @@ export default function StickyScroll({
   }, [scrollYProgress, cardLength, content]);
 
   const backgroundColors = [
-    "var(--background-color-1)",
+    "bg-background-light",
     "var(--background-color-2)",
     "var(--background-color-3)",
   ];
   const linearGradients = [
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
+    "linear-gradient(to bottom right, var(--white), var(--gray-500))",
+    "linear-gradient(to bottom right, var(--white), var(--gray-200))",
+    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-900))",
   ];
 
   return (
@@ -72,7 +72,7 @@ export default function StickyScroll({
       }}
     >
       <motion.div
-        className=" rounded-2xl bg-slate-950 dark:bg-gray-100  duration-500 ease-in-out"
+        className=" rounded-2xl bg-slate-950 duration-500  ease-in-out dark:bg-gray-100"
         style={{
           position: "sticky",
           top: 100,

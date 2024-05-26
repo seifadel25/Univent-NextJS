@@ -28,22 +28,23 @@ export default function HomePage() {
           </div>
           <div className="md:w-1/2">
             <p className="px-4 text-2xl">
-              Univent team works on making the Egyptian products capital on the
-              list of the high-quality products to become a (Made in Egypt)
-              guide on the ultimate quality and workmanship spread our products
-              all over the world.
+              Univent is dedicated to elevating Egyptian products to the
+              pinnacle of quality and craftsmanship. We aim to make "Made in
+              Egypt" synonymous with excellence, recognized and trusted
+              globally.
             </p>
           </div>
         </div>
         <div className="flex flex-col items-center justify-between gap-10 py-10 md:flex-row md:py-28">
           <div className="px-4 text-2xl md:w-1/2">
             <p>
-              Since 1979, Univent © became one of the most important companies
-              in the Ventilation Fan field. We continue in our development
-              journey using the latest engineering methods and international
-              standards to achieve our vision. Univent offers a wide range of
-              ventilation products for multiple applications, such as standard
-              buildings, health, and industrial fields.
+              Since our founding in 1979, Univent has grown to become a leader
+              in the ventilation fan industry. We continually strive to innovate
+              and improve, utilizing the latest engineering techniques and
+              adhering to international standards. Our mission is to deliver
+              cutting-edge ventilation solutions for a wide range of
+              applications, including residential, healthcare, and industrial
+              sectors.
             </p>
           </div>
           <div
@@ -81,140 +82,98 @@ export default function HomePage() {
           Certificates
         </h2>
         <div className="mx-8 grid grid-cols-4 gap-4 md:grid-cols-10">
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
+          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white text-center font-medium shadow-lg  shadow-black/50 dark:bg-background-dark">
             <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              EOS Certificates
+              AJTC Certificates
             </div>
             <div
               className="absolute inset-0  flex items-center justify-center bg-white opacity-10 transition-opacity duration-300 hover:opacity-100"
               style={{
-                backgroundImage: "url('/images/Certificates/Main/EOS.jpeg')",
+                backgroundImage: "url('/images/Certificates/Main/AJTC.png')",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "contain",
                 backgroundPosition: "center",
               }}
             ></div>
           </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
+          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white text-center font-medium shadow-lg  shadow-black/50 dark:bg-background-dark">
             <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              We Are Official Distributor for Ruck-Germany
+              Measurements and Calibration Labs
             </div>
             <div
               className="absolute inset-0   flex items-center justify-center opacity-10 transition-opacity duration-300 hover:opacity-100"
               style={{
-                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundImage: "url('/images/Certificates/Main/MLC.png')",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             ></div>
           </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
+          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white text-center font-medium shadow-lg  shadow-black/50 dark:bg-background-dark">
             <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              We Are Official Distributor for Ruck-Germany
+              National Organization For Potable Water & Sanitary Drainage
             </div>
             <div
               className="absolute inset-0   flex items-center justify-center opacity-10 transition-opacity duration-300 hover:opacity-100"
               style={{
-                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundImage: "url('/images/Certificates/Main/NO.png')",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             ></div>
           </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
+          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white text-center font-medium shadow-lg  shadow-black/50 dark:bg-background-dark">
             <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              We Are Official Distributor for Ruck-Germany
+              Udem System and Product Certification
             </div>
             <div
               className="absolute inset-0   flex items-center justify-center opacity-10 transition-opacity duration-300 hover:opacity-100"
               style={{
-                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundImage: "url('/images/Certificates/Main/UDEM.png')",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             ></div>
           </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
+          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white text-center font-medium shadow-lg  shadow-black/50 dark:bg-background-dark">
             <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              We Are Official Distributor for Ruck-Germany
+              Egyptian Organization for Standardization
             </div>
             <div
               className="absolute inset-0   flex items-center justify-center opacity-10 transition-opacity duration-300 hover:opacity-100"
               style={{
-                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundImage: "url('/images/Certificates/Main/EOS.png')",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             ></div>
           </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
+          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white text-center font-medium shadow-lg  shadow-black/50 dark:bg-background-dark">
             <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              EOS Certificates
+              ISO 9001 -2018 Certification
             </div>
             <div
               className="absolute inset-0  flex items-center justify-center bg-white opacity-10 transition-opacity duration-300 hover:opacity-100"
               style={{
-                backgroundImage: "url('/images/Certificates/Main/EOS.jpeg')",
+                backgroundImage: "url('/images/Certificates/Main/ISO.jpg')",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "contain",
                 backgroundPosition: "center",
               }}
             ></div>
           </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
+          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white text-center font-medium shadow-lg  shadow-black/50  dark:bg-background-dark">
             <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
               We Are Official Distributor for Ruck-Germany
             </div>
             <div
               className="absolute inset-0   flex items-center justify-center opacity-10 transition-opacity duration-300 hover:opacity-100"
               style={{
-                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
-          </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
-            <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              We Are Official Distributor for Ruck-Germany
-            </div>
-            <div
-              className="absolute inset-0   flex items-center justify-center opacity-10 transition-opacity duration-300 hover:opacity-100"
-              style={{
-                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
-          </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
-            <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              We Are Official Distributor for Ruck-Germany
-            </div>
-            <div
-              className="absolute inset-0   flex items-center justify-center opacity-10 transition-opacity duration-300 hover:opacity-100"
-              style={{
-                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
-          </div>
-          <div className="relative col-span-2 h-[300px] overflow-hidden rounded-lg bg-white shadow-lg shadow-black/50">
-            <div className="absolute inset-0 flex items-center justify-center bg-white/50 opacity-100 transition-opacity duration-300 hover:opacity-0">
-              We Are Official Distributor for Ruck-Germany
-            </div>
-            <div
-              className="absolute inset-0   flex items-center justify-center opacity-10 transition-opacity duration-300 hover:opacity-100"
-              style={{
-                backgroundImage: "url('/images/Certificates/Main/Ruck.jpg')",
+                backgroundImage: "url('/images/Certificates/Main/Ruck.png')",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
