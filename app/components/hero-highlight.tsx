@@ -30,8 +30,8 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative h-[80svh] flex items-center bg-white dark:bg-black justify-center w-full group",
-        containerClassName
+        "group relative flex h-[60svh] w-full items-center justify-center bg-white dark:bg-black",
+        containerClassName,
       )}
       onMouseMove={handleMouseMove}
     >
@@ -44,7 +44,7 @@ export const HeroHighlight = ({
         <Image src={H1Image} width={400} alt="test" className="bg-black" />
       </div> */}
 
-      <div className="absolute inset-0 opacity-80 bg-neutral-100 dark:bg-neutral-100  pointer-events-none">
+      <div className="pointer-events-none absolute inset-0 bg-neutral-100 opacity-80  dark:bg-neutral-100">
         <ImagesSlider
           images={[
             "/images/Hero/jpeg-optimizer_5.png",
@@ -57,7 +57,7 @@ export const HeroHighlight = ({
         </ImagesSlider>
       </div>
       <motion.div
-        className="pointer-events-none bg-white dark:bg-white   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-50"
+        className="pointer-events-none absolute inset-0   bg-white opacity-0 transition duration-300 group-hover:opacity-50 dark:bg-white"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -107,8 +107,8 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block pb-1   px-3 rounded-r-lg bg-gradient-to-r from-blue-400 to-blue-700 dark:from-blue-700 dark:to-blue-900`,
-        className
+        `relative inline-block rounded-r-lg   bg-gradient-to-r from-blue-300 via-blue-600 to-blue-800 px-3 pb-1 dark:from-blue-500 dark:via-blue-800 dark:to-blue-950`,
+        className,
       )}
     >
       {children}

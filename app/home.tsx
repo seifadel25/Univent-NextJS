@@ -29,13 +29,14 @@ export default function HomePage() {
           <div className="md:w-1/2">
             <p className="px-4 text-2xl">
               Univent is dedicated to elevating Egyptian products to the
-              pinnacle of quality and craftsmanship. We aim to make &quot;Made in
-              Egypt&quot; synonymous with excellence, recognized and trusted
+              pinnacle of quality and craftsmanship. We aim to make &quot;Made
+              in Egypt&quot; synonymous with excellence, recognized and trusted
               globally.
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between gap-10 py-10 md:flex-row md:py-28">
+        {/* For Large screens */}
+        <div className=" hidden flex-col items-center justify-between gap-10 py-10 md:flex md:flex-row md:py-28">
           <div className="px-4 text-2xl md:w-1/2">
             <p>
               Since our founding in 1979, Univent has grown to become a leader
@@ -54,6 +55,27 @@ export default function HomePage() {
             <h3 className="h-fit rounded  bg-white bg-opacity-75 p-3 dark:bg-slate-800 dark:bg-opacity-75">
               Our Mission
             </h3>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-between gap-10 py-10 md:hidden md:flex-row md:py-28">
+          <div
+            className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
+            style={{ backgroundImage: "url('/images/About/Mission.jpg')" }}
+          >
+            <h3 className="h-fit rounded  bg-white bg-opacity-75 p-3 dark:bg-slate-800 dark:bg-opacity-75">
+              Our Mission
+            </h3>
+          </div>
+          <div className="px-4 text-2xl md:w-1/2">
+            <p>
+              Since our founding in 1979, Univent has grown to become a leader
+              in the ventilation fan industry. We continually strive to innovate
+              and improve, utilizing the latest engineering techniques and
+              adhering to international standards. Our mission is to deliver
+              cutting-edge ventilation solutions for a wide range of
+              applications, including residential, healthcare, and industrial
+              sectors.
+            </p>
           </div>
         </div>
       </div>

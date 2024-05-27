@@ -26,13 +26,13 @@ export const ImagesSlider = ({
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
+      prevIndex + 1 === images.length ? 0 : prevIndex + 1,
     );
   };
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1,
     );
   };
 
@@ -119,8 +119,8 @@ export const ImagesSlider = ({
   return (
     <div
       className={cn(
-        "overflow-hidden  h-full w-full relative flex items-center justify-center",
-        className
+        "relative  flex h-full w-full items-center justify-center overflow-hidden",
+        className,
       )}
       style={{
         perspective: "1000px",
@@ -129,7 +129,7 @@ export const ImagesSlider = ({
       {areImagesLoaded && children}
       {areImagesLoaded && overlay && (
         <div
-          className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)}
+          className={cn("absolute inset-0 z-40 bg-black/60", overlayClassName)}
         />
       )}
 
@@ -142,7 +142,7 @@ export const ImagesSlider = ({
             animate="visible"
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
-            className="image h-full md:w-full absolute -inset-y-72 mt-[20rem] md:mt-[25rem] lg:mt-[15rem] xl:mt-[0] object-fill object-center"
+            className="image absolute -inset-y-72 mt-[18rem] h-full object-cover object-center md:mt-[18rem] md:w-full lg:mt-[18rem] xl:mt-[18rem]"
           />
         </AnimatePresence>
       )}

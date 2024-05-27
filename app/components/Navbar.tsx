@@ -20,77 +20,82 @@ export default function NavbarComp() {
 
   const menuItems = ["home", "products", "Clients", "About us", "Contact us"];
   return (
-    <Navbar className="py-2  dark:bg-slate-700/40">
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
-        <NavbarBrand>
-          <Link href="/">
-            <Image src={myLogo} alt="Univent" width={150} height={100} />
-          </Link>
-        </NavbarBrand>
-      </NavbarContent>
-
-      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
-        <NavbarItem>
-          <Link
-            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
-            aria-current="page"
-            href="/"
-          >
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
-            href="/products"
-          >
-            Products
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
-            href="/Clients"
-          >
-            Clients
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
-            href="/Certificates"
-          >
-            Certificates
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
-            href="/About"
-          >
-            About us
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="overflow-hidden rounded-lg ">
-          <Button
-            as={Link}
-            href="/contact"
-            variant="flat"
-            className="w-[40%] overflow-hidden rounded-lg bg-primary-light text-white dark:bg-primary-dark "
-          >
-            Contact Us
-          </Button>
-        </NavbarItem>
-        <NavbarItem>
-          <DarkModeToggle />
-        </NavbarItem>
-      </NavbarContent>
+    <Navbar className="md:flex  py-2 dark:bg-slate-700/40">
+      <div className="w-full md:w-3/12 md:mr-4">
+        <NavbarContent>
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            className="md:hidden p-2"
+          />
+          <NavbarBrand>
+            <Link href="/">
+              <Image src={myLogo} alt="Univent" width={150} height={100} />
+            </Link>
+          </NavbarBrand>
+        </NavbarContent>
+      </div>
+      <div className="w-4/12">
+        <NavbarContent className="hidden w-3/6 gap-4 md:flex" justify="center">
+          <NavbarItem>
+            <Link
+              className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+              aria-current="page"
+              href="/"
+            >
+              Home
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+              href="/products"
+            >
+              Products
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+              href="/Clients"
+            >
+              Clients
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+              href="/Certificates"
+            >
+              Certificates
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+              href="/About"
+            >
+              About us
+            </Link>
+          </NavbarItem>
+        </NavbarContent>
+      </div>
+      <div className="w-full md:w-3/12">
+        <NavbarContent>
+          <NavbarItem className="overflow-hidden rounded-lg ">
+            <Button
+              as={Link}
+              href="/contact"
+              variant="flat"
+              className="w-[10%] overflow-hidden rounded-lg bg-primary-light text-white dark:bg-primary-dark "
+            >
+              Contact Us
+            </Button>
+          </NavbarItem>
+          <NavbarItem>
+            <DarkModeToggle />
+          </NavbarItem>
+        </NavbarContent>
+      </div>
       <NavbarMenu>
         <NavbarMenuItem className="">
           <Link

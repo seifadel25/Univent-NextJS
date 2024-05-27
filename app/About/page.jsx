@@ -40,8 +40,8 @@ export default function About() {
       </div>
       <div>
         <h2 className="pt-16 text-center text-5xl font-semibold">Our Vision</h2>
-
-        <div className="flex flex-col items-center justify-between gap-10 py-10 md:flex-row md:py-28">
+        {/*         Large */}
+        <div className="hidden flex-col items-center justify-between gap-10 py-10 md:flex md:flex-row md:py-28">
           <div
             className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
             style={{ backgroundImage: "url('/images/About/Vision.jpg')" }}
@@ -54,6 +54,21 @@ export default function About() {
               craftsmanship, with our products recognized and trusted worldwide.
             </p>
           </div>
+        </div>
+        {/*         Small */}
+        <div className="flex flex-col items-center justify-between gap-10 py-10 md:hidden md:flex-row md:py-28">
+          <div className="md:w-1/2">
+            <p className="px-4 text-2xl">
+              At Univent, we are dedicated to placing Egyptian products at the
+              forefront of high-quality manufacturing. Our vision is to make
+              &quot;Made in Egypt&quot; a hallmark of excellence and superior
+              craftsmanship, with our products recognized and trusted worldwide.
+            </p>
+          </div>
+          <div
+            className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
+            style={{ backgroundImage: "url('/images/About/Vision.jpg')" }}
+          ></div>
         </div>
         <h2 className="pt-16 text-center text-5xl font-semibold">
           Our Mission
