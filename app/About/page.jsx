@@ -50,7 +50,7 @@ export default function About() {
             <p className="px-4 text-2xl">
               At Univent, we are dedicated to placing Egyptian products at the
               forefront of high-quality manufacturing. Our vision is to make
-              "Made in Egypt" a hallmark of excellence and superior
+              &quot;Made in Egypt&quot; a hallmark of excellence and superior
               craftsmanship, with our products recognized and trusted worldwide.
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function About() {
           <h3 className="pb-4 pt-16 text-center text-5xl font-semibold">
             Our Values
           </h3>
-          <div className="flex py-4 gap-x-2">
+          <div className="flex gap-x-2 py-4">
             <h4 className="font-semibold">Quality:</h4>
             <p>
               We are dedicated to delivering products of the highest quality,
@@ -132,14 +132,14 @@ export default function About() {
               solutions.
             </p>
           </div>
-          <div className="flex py-4 gap-x-2">
+          <div className="flex gap-x-2 py-4">
             <h4 className="font-semibold">Integrity:</h4>
             <p>
               We conduct our business with honesty and transparency, building
               trust with our clients and partners.
             </p>
           </div>
-          <div className="flex py-4 gap-x-2">
+          <div className="flex gap-x-2 py-4">
             <h4 className="font-semibold">Innovation:</h4>
             <p>
               We are committed to innovation and continuous improvement,
@@ -147,7 +147,7 @@ export default function About() {
               customer needs.
             </p>
           </div>
-          <div className="flex py-4 gap-x-2">
+          <div className="flex gap-x-2 py-4">
             <h4 className="font-semibold">Customer Focus:</h4>
             <p>
               Our customers are at the center of everything we do. We listen to
@@ -155,7 +155,7 @@ export default function About() {
               turn.
             </p>
           </div>
-          <div className="flex py-4 gap-x-2">
+          <div className="flex gap-x-2 py-4">
             <h4 className="font-semibold">Teamwork: </h4>
             <p>
               We believe in the power of teamwork and collaboration, working

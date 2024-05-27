@@ -9,9 +9,9 @@ export default function Footer() {
           <h3 className="pb-10 text-2xl font-bold">About Us</h3>
           <p className="text-sm font-bold text-gray-600 dark:text-gray-400">
             At Univent, we are dedicated to placing Egyptian products at the
-            forefront of high-quality manufacturing. Our vision is to make "Made
-            in Egypt" a hallmark of excellence and superior craftsmanship, with
-            our products recognized and trusted worldwide.
+            forefront of high-quality manufacturing. Our vision is to make
+            &quot;Made in Egypt&quot; a hallmark of excellence and superior
+            craftsmanship, with our products recognized and trusted worldwide.
           </p>
         </div>
         <div className="flex w-3/12 flex-col items-center justify-center">

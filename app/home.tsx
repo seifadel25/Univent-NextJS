@@ -29,8 +29,8 @@ export default function HomePage() {
           <div className="md:w-1/2">
             <p className="px-4 text-2xl">
               Univent is dedicated to elevating Egyptian products to the
-              pinnacle of quality and craftsmanship. We aim to make "Made in
-              Egypt" synonymous with excellence, recognized and trusted
+              pinnacle of quality and craftsmanship. We aim to make &quot;Made in
+              Egypt&quot; synonymous with excellence, recognized and trusted
               globally.
             </p>
           </div>
