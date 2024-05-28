@@ -30,7 +30,7 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "group relative flex h-[60svh] w-full items-center justify-center bg-white dark:bg-black",
+        "group relative flex h-[70svh] w-full items-center justify-center bg-white dark:bg-black",
         containerClassName,
       )}
       onMouseMove={handleMouseMove}
@@ -42,10 +42,11 @@ export const HeroHighlight = ({
         <Image src={H1Image} width={400} alt="test" className="bg-black" />
         <Image src={H1Image} width={400} alt="test" className="bg-black" />
         <Image src={H1Image} width={400} alt="test" className="bg-black" />
+        bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-900 via-sky-500 to-blue-700
       </div> */}
 
-      <div className="pointer-events-none absolute inset-0 bg-neutral-100 opacity-80  dark:bg-neutral-100">
-        <ImagesSlider
+      <div className="pointer-events-none absolute inset-0 dark:bg-[#40414f]/20 ">
+        {/* <ImagesSlider
           images={[
             "/images/Hero/jpeg-optimizer_5.png",
             "/images/Hero/jpeg-optimizer_20 (2).png",
@@ -54,10 +55,10 @@ export const HeroHighlight = ({
           ]}
         >
           <div></div>
-        </ImagesSlider>
+        </ImagesSlider> */}
       </div>
-      <motion.div
-        className="pointer-events-none absolute inset-0   bg-white opacity-0 transition duration-300 group-hover:opacity-50 dark:bg-white"
+      {/* <motion.div
+        className="pointer-events-none absolute inset-0    opacity-0 transition duration-300 group-hover:opacity-50 dark:bg-white"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -74,7 +75,7 @@ export const HeroHighlight = ({
             )
           `,
         }}
-      />
+      /> */}
 
       <div className={cn("relative z-20", className)}>{children}</div>
     </div>
@@ -107,7 +108,7 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block rounded-r-lg   bg-gradient-to-r from-blue-300 via-blue-600 to-blue-800 px-3 pb-1 dark:from-blue-500 dark:via-blue-800 dark:to-blue-950`,
+        `relative inline-block rounded-r-lg bg-sky-600 px-3   pb-1 dark:bg-sky-800 `,
         className,
       )}
     >
@@ -115,3 +116,4 @@ export const Highlight = ({
     </motion.span>
   );
 };
+//bg-gradient-to-r from-blue-300 via-blue-600 to-blue-800 dark:from-blue-500 dark:via-blue-800 dark:to-blue-950

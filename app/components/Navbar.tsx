@@ -20,12 +20,12 @@ export default function NavbarComp() {
 
   const menuItems = ["home", "products", "Clients", "About us", "Contact us"];
   return (
-    <Navbar className="md:flex  py-2 dark:bg-slate-700/40">
-      <div className="w-full md:w-3/12 md:mr-4">
+    <Navbar className="dark:bg-[#40414f]/20  py-2 md:flex">
+      <div className="w-full md:mr-4 md:w-3/12">
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="md:hidden p-2"
+            className="p-2 md:hidden"
           />
           <NavbarBrand>
             <Link href="/">

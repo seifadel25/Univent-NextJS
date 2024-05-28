@@ -15,8 +15,8 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
-  --background-color-1: rgb(2, 6, 23); /* Dark mode color */
-  --background-color-2: rgb(0, 0, 0); /* Dark mode color */
+  --background-color-1: rgba(64, 65, 79,0.4); /* Dark mode color */
+  --background-color-2: rgba(64, 65, 79,0.2); /* Dark mode color */
   --background-color-3: rgb(2, 6, 23); /* Dark mode color */
 }
 

@@ -60,7 +60,7 @@ const Clients = [
   },
   {
     title: "PetroJet",
-    logo: "/images/Clients/Clients/PetroJet 1.png",
+    logo: "/images/Clients/Clients/Petrojet 1.png",
   },
   {
     title: "Samsung",
@@ -97,12 +97,12 @@ function Page() {
           alignItems: "center",
         }}
       >
-        <h1 className="-mt-36 rounded-xl bg-gray-100/60 px-6 py-4 text-center text-5xl font-bold dark:bg-slate-900/70">
+        <h1 className="-mt-36 rounded-xl bg-gray-100/60 px-6 py-4 text-center text-5xl font-bold dark:bg-[#262629]/70">
           Our Clients
         </h1>
       </div>
       <div className="-mt-32 ">
-        <div className="grid grid-cols-12 gap-4 bg-gray-100/40 dark:bg-slate-950/60 p-6 md:gap-10 lg:gap-20 ">
+        <div className="grid grid-cols-12 gap-4 bg-gray-100/40 dark:bg-[#40414f]/20 p-6 md:gap-10 lg:gap-20 ">
           {Clients.map((client, index) => (
             <ClientCards key={index} title={client.title} logo={client.logo} />
           ))}

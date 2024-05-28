@@ -53,9 +53,9 @@ export default function StickyScroll({
   }, [scrollYProgress, cardLength, content]);
 
   const backgroundColors = [
-    "bg-background-light",
     "var(--background-color-2)",
-    "var(--background-color-3)",
+    "var(--background-color-1)",
+    "var(--background-color-2)",
   ];
   const linearGradients = [
     "linear-gradient(to bottom right, var(--white), var(--gray-500))",
@@ -64,58 +64,71 @@ export default function StickyScroll({
   ];
 
   return (
-    <motion.div
-      className="relative flex h-[45rem] justify-center space-x-10 overflow-y-auto rounded-md bg-slate-950 p-10 scrollbar-hide"
-      ref={ref}
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
-    >
-      <motion.div
-        className=" rounded-2xl bg-slate-950 duration-500  ease-in-out dark:bg-gray-100"
-        style={{
-          position: "sticky",
-          top: 100,
-          left: 5,
-          height: progressBarHeight,
-          width: "4px",
-        }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-      />
-      <div className="relative flex items-start px-4">
-        <div className="max-w-2xl">
-          {content.map((item, index) => (
-            <div key={item.title + index} className="my-64">
-              <motion.h2
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-4xl font-bold text-slate-900 dark:text-slate-100"
-              >
-                {item.title}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="mt-10 max-w-sm text-lg text-slate-700 dark:text-slate-300"
-              >
-                {item.description}
-              </motion.p>
-            </div>
-          ))}
-          <div className="h-40" />
-        </div>
-      </div>
-      <motion.div
+    <div>
+      <motion.h2
+        className="py-6 text-center text-4xl font-semibold"
         animate={{
-          background: linearGradients[activeCard % linearGradients.length],
+          backgroundColor:
+            backgroundColors[activeCard % backgroundColors.length],
         }}
-        className={cn(
-          "sticky top-24 hidden h-80 w-96 overflow-hidden rounded-md bg-white lg:block",
-          contentClassName,
-        )}
       >
-        {content[activeCard].content ?? null}
+        What Makes Our HVAC Factory Special?
+      </motion.h2>
+
+      <motion.div
+        className="relative flex h-[45rem] justify-center space-x-10 overflow-y-auto rounded-md dark:bg-[#40414f]/20 p-10 scrollbar-hide"
+        ref={ref}
+        animate={{
+          backgroundColor:
+            backgroundColors[activeCard % backgroundColors.length],
+        }}
+      >
+        <motion.div
+          className=" rounded-2xl bg-slate-950 duration-500  ease-in-out dark:bg-gray-100"
+          style={{
+            position: "sticky",
+            top: 100,
+            left: 5,
+            height: progressBarHeight,
+            width: "4px",
+          }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        />
+        <div className="relative flex items-start px-4">
+          <div className="max-w-2xl">
+            {content.map((item, index) => (
+              <div key={item.title + index} className="my-64">
+                <motion.h2
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                  className="text-4xl font-bold text-slate-900 dark:text-slate-100"
+                >
+                  {item.title}
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                  className="mt-10 max-w-sm text-lg text-slate-700 dark:text-slate-300"
+                >
+                  {item.description}
+                </motion.p>
+              </div>
+            ))}
+            <div className="h-40" />
+          </div>
+        </div>
+        <motion.div
+          animate={{
+            background: linearGradients[activeCard % linearGradients.length],
+          }}
+          className={cn(
+            "sticky top-36 hidden h-fit w-[36rem] overflow-hidden rounded-md bg-white lg:block",
+            contentClassName,
+          )}
+        >
+          {content[activeCard].content ?? null}
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 }

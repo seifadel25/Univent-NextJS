@@ -14,17 +14,17 @@ export default function ContactPage() {
             className="w-full object-cover"
           />
           <div className="absolute inset-0 -mt-7 flex items-center justify-center font-bold  text-text-light dark:text-text-dark lg:-mt-20 ">
-            <h1 className="rounded-xl bg-gray-200/70 px-10 py-4 text-4xl dark:bg-gray-900/70 md:text-5xl lg:text-6xl">
+            <h1 className="rounded-xl bg-gray-200/70 px-10 py-4 text-4xl dark:bg-[#262629]/70 md:text-5xl lg:text-6xl">
               Contact Us
             </h1>
           </div>
         </div>
       </div>
-      <div className=" sticky -mt-8 flex w-full flex-col items-center justify-center rounded-lg bg-white py-4 font-bold text-text-light dark:bg-black dark:text-text-dark lg:-mt-24">
+      <div className=" sticky flex w-full flex-col items-center justify-center rounded-lg bg-white py-4 font-bold text-text-light dark:bg-[#40414f]/20 dark:text-text-dark ">
         <h2 className="mb-10 w-full py-6 text-center text-2xl md:text-3xl lg:text-4xl">
           Send Us a Message
         </h2>
-        <div className="hidden w-10/12  bg-gray-200 px-4 py-1 dark:bg-slate-950 md:flex">
+        <div className="hidden w-10/12  rounded-lg bg-gray-200 px-4 py-1 dark:bg-[#262629] md:flex">
           <div className="w-5/12">
             <Image
               src={"/images/Contact/Contact.jpg"}
@@ -34,7 +34,7 @@ export default function ContactPage() {
               className="sticky -mt-8 h-full w-full rounded-lg object-fill"
             />
           </div>
-          <div className="w-7/12 bg-gray-200 py-10 dark:bg-slate-950">
+          <div className="w-7/12 bg-gray-200 py-10 dark:bg-[#262629]">
             <form className="mx-8 w-3/4 space-y-4">
               <div>
                 <label
@@ -126,7 +126,7 @@ export default function ContactPage() {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <form className="mx-8 w-3/4 space-y-4 bg-gray-200/80 dark:bg-slate-950/80 py-4 px-8 rounded-xl">
+            <form className="mx-8 w-3/4 space-y-4 rounded-xl bg-gray-200/80 px-8 py-4 dark:bg-[#262629]/80">
               <div>
                 <label
                   htmlFor="name"
@@ -200,7 +200,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-full flex-col bg-gray-200 pb-14 text-text-light dark:bg-black dark:text-text-dark">
+      <div className="flex w-full flex-col bg-gray-200 pb-14 text-text-light dark:bg-[#40414f]/20 dark:text-text-dark">
         <h2 className="w-full py-6 text-center text-2xl md:text-3xl lg:text-4xl">
           Contact Information
         </h2>
