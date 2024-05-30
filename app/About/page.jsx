@@ -178,18 +178,18 @@ export default function About() {
               </p>
             </div>
             <div className="flex w-full gap-x-2 py-4 md:w-5/12">
+              <h4 className="text-lg font-extrabold">Teamwork: </h4>
+              <p className="text-lg">
+                We believe in the power of teamwork and collaboration, working
+                together to achieve our goals and deliver exceptional results.
+              </p>
+            </div>
+            <div className="flex w-full gap-x-2 py-4 md:w-6/12">
               <h4 className="text-lg font-extrabold">Customer Focus:</h4>
               <p className="text-lg">
                 Our customers are at the center of everything we do. We listen
                 to their feedback and work to exceed their expectations at every
                 turn.
-              </p>
-            </div>
-            <div className="flex w-full gap-x-2 py-4 md:w-5/12">
-              <h4 className="text-lg font-extrabold">Teamwork: </h4>
-              <p className="text-lg">
-                We believe in the power of teamwork and collaboration, working
-                together to achieve our goals and deliver exceptional results.
               </p>
             </div>
           </div>

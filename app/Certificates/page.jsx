@@ -59,6 +59,10 @@ const NO = [
     image: "/images/Certificates/NO/NO3.png",
     link: "/images/Certificates/NO/الهيئة القوميه 3_20231207_0001.pdf",
   },
+  {
+    image: "/images/Certificates/NO/NO4.png",
+    link: "/images/Certificates/NO/NO4.png",
+  },
 ];
 const UDEM = [
   {
@@ -66,9 +70,52 @@ const UDEM = [
     link: "/images/Certificates/UDEM/1714371798172895龙标-UDEM-LVD+EMC.pdf",
   },
 ];
-const EOS = [];
-const ISO = [];
-const RUCK = [];
+const EOS = [
+  {
+    image: "/images/Certificates/EOS/EOS1.png",
+    link: "/images/Certificates/EOS/EOS1.png",
+  },
+  {
+    image: "/images/Certificates/EOS/EOS2.png",
+    link: "/images/Certificates/EOS/EOS2.png",
+  },
+  {
+    image: "/images/Certificates/EOS/EOS3.png",
+    link: "/images/Certificates/EOS/EOS3.png",
+  },
+  {
+    image: "/images/Certificates/EOS/EOS4.png",
+    link: "/images/Certificates/EOS/EOS4.png",
+  },
+  {
+    image: "/images/Certificates/EOS/EOS5.png",
+    link: "/images/Certificates/EOS/EOS5.png",
+  },
+];
+const ISO = [
+  {
+    image: "/images/Certificates/ISO/ISO.png",
+    link: "/images/Certificates/ISO/ISO.png",
+  },
+];
+const RUCK = [
+  {
+    image: "/images/Certificates/RUCK/RUCK.png",
+    link: "/images/Certificates/RUCK/RUCK.png",
+  },
+];
+const Giz = [
+  {
+    image: "/images/Certificates/Giz/Giz.png",
+    link: "/images/Certificates/Giz/Giz.png",
+  },
+];
+const Trademark = [
+  {
+    image: "/images/Certificates/Trademark.png",
+    link: "/images/Certificates/Trademark.png",
+  },
+];
 
 function page() {
   return (
@@ -174,7 +221,7 @@ function page() {
           </div>
         </div>
         <div id="UDEM" className="bg-white px-6 dark:bg-[#40414f]/40">
-          <h2 className="pt-8 text-center text-4xl font-semibold">
+          <h2 className="pl-10  pt-8 text-4xl font-semibold">
             Udem System and Product Certification{" "}
           </h2>
           <div>
@@ -201,7 +248,7 @@ function page() {
           </div>
         </div>
         <div id="EOS" className="bg-background-light px-6 dark:bg-[#40414f]/20">
-          <h2 className="pt-8 text-center text-4xl font-semibold">
+          <h2 className="pl-10 pt-8  text-4xl font-semibold">
             EOS: Egyptian Organization for Standardization
           </h2>
           <div>
@@ -228,7 +275,7 @@ function page() {
           </div>
         </div>
         <div id="ISO" className="bg-white px-6 dark:bg-[#40414f]/40">
-          <h2 className="pt-8 text-center text-4xl font-semibold">
+          <h2 className="pl-10 pt-8  text-4xl font-semibold">
             ISO 9001 -2018 Certification
           </h2>
           <div>
@@ -258,7 +305,7 @@ function page() {
           id="RUCK"
           className="bg-background-light px-6 dark:bg-[#40414f]/20"
         >
-          <h2 className="pt-8 text-center text-4xl font-semibold">
+          <h2 className="pl-10 pt-8 text-4xl font-semibold">
             Ruck-Germany Certification
           </h2>
           <div>
@@ -268,6 +315,60 @@ function page() {
                   <div
                     key={index}
                     className="w-[60dvw] sm:w-[50dvw] md:w-[17dvw]"
+                  >
+                    <Link href={item.link}>
+                      <Image
+                        className="rounded-xl"
+                        src={item.image}
+                        width={500}
+                        height={700}
+                        alt="Ruck-Germany Certificate"
+                      />
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Giz" className="bg-background-light px-6 dark:bg-[#40414f]/40">
+          <h2 className="pl-10 pt-8 text-4xl font-semibold">
+            Fit for Partnership with Germany Certification
+          </h2>
+          <div>
+            <div>
+              <div className="flex flex-wrap justify-center gap-6 px-10 py-8">
+                {Giz.map((item, index) => (
+                  <div
+                    key={index}
+                    className="w-[60dvw] sm:w-[50dvw] md:w-[17dvw]"
+                  >
+                    <Link href={item.link}>
+                      <Image
+                        className="rounded-xl"
+                        src={item.image}
+                        width={500}
+                        height={700}
+                        alt="Ruck-Germany Certificate"
+                      />
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Giz" className="bg-background-light px-6 dark:bg-[#40414f]/20">
+          <h2 className="pl-10 pt-8 text-4xl font-semibold">
+            Trademark Certification
+          </h2>
+          <div>
+            <div>
+              <div className="flex flex-wrap justify-center gap-6 px-10 py-8">
+                {Trademark.map((item, index) => (
+                  <div
+                    key={index}
+                    className="w-[80dvw] sm:w-[80dvw] md:w-[40dvw] lg:w-[30dvw]"
                   >
                     <Link href={item.link}>
                       <Image

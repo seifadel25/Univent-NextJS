@@ -52,7 +52,7 @@ const Clients = [
   },
   {
     title: "ElSewedy Electric",
-    logo: "/images/Clients/Clients/ElSweedy 1.png",
+    logo: "/images/Clients/Clients/Elsweedy 1.png",
   },
   {
     title: "Jidaar Construction",
