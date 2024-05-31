@@ -19,9 +19,8 @@ export const HeroParallax = ({
     thumbnail: StaticImageData;
   }[];
 }) => {
-  const firstRow = products.slice(0, 5);
-  const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+  const firstRow = products.slice(0, 4);
+  const secondRow = products.slice(4, 8);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -43,7 +42,7 @@ export const HeroParallax = ({
     springConfig,
   );
   const opacity = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+    useTransform(scrollYProgress, [0, 0.2], [0.65, 1]),
     springConfig,
   );
   const rotateZ = useSpring(
@@ -70,32 +69,25 @@ export const HeroParallax = ({
         className=""
       >
         <motion.div className="mb-20 flex flex-row-reverse space-x-10 space-x-reverse">
-          {firstRow.map((product) => (
+          {firstRow.map((product, index) => (
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={index}
+              opacity={opacity}
             />
           ))}
         </motion.div>
         <motion.div className="mb-20 flex  flex-row space-x-10 ">
-          {secondRow.map((product) => (
+          {secondRow.map((product, index) => (
             <ProductCard
               product={product}
               translate={translateXReverse}
-              key={product.title}
+              key={index}
+              opacity={opacity}
             />
           ))}
         </motion.div>
-        {/* <motion.div className="flex flex-row-reverse space-x-reverse space-x-10">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
-        </motion.div> */}
       </motion.div>
     </div>
   );
@@ -122,6 +114,7 @@ export const Header = () => {
 export const ProductCard = ({
   product,
   translate,
+  opacity,
 }: {
   product: {
     title: string;
@@ -129,11 +122,13 @@ export const ProductCard = ({
     thumbnail: StaticImageData;
   };
   translate: MotionValue<number>;
+  opacity: MotionValue<number>;
 }) => {
   return (
     <motion.div
       style={{
         x: translate,
+        opacity,
       }}
       whileHover={{
         y: -20,
@@ -147,9 +142,9 @@ export const ProductCard = ({
       >
         <Image
           src={product.thumbnail}
-          height="600"
-          width="600"
-          className="absolute inset-0 h-[300px] w-[400px] object-cover object-left-top md:h-full md:w-full"
+          height="500"
+          width="500"
+          className="absolute inset-0 h-[250px] w-[250px] object-contain object-left-top md:h-full md:w-full"
           alt={product.title}
         />
       </Link>
