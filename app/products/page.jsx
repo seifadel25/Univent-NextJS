@@ -65,7 +65,7 @@ const products = [
     description: "Low noise fans with low power consumption",
     category: "Decorative Fans",
     link: "/products/Slim",
-    thumbnail: "/images/Products/Slim.png",
+    thumbnail: "/images/Products/SLIM.png",
   },
   {
     title: "AXW MODEL",
