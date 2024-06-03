@@ -57,6 +57,26 @@ const hero = [
     link: "#AT Model Fan Section",
     thumbnail: "/images/Products/Hero/ATMODEL.png",
   },
+  {
+    title: "ATS",
+    link: "#ATS",
+    thumbnail: "/images/Products/Hero/ATS.png",
+  },
+  {
+    title: "RS",
+    link: "#RS",
+    thumbnail: "/images/Products/Hero/RS.png",
+  },
+  {
+    title: "MPC TI Model Ruck (120°C)",
+    link: "#MPC TI Model Ruck (120°C)",
+    thumbnail: "/images/Products/Hero/MPCTI.png",
+  },
+  {
+    title: "RDH",
+    link: "#RDH",
+    thumbnail: "/images/Products/Hero/RDH.png",
+  },
 ];
 
 const products = [

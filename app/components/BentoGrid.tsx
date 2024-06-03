@@ -10,60 +10,57 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 export function BentoGridDemo() {
   return (
-    <BentoGrid className="mx-auto max-w-6xl ">
+    <BentoGrid className="mx-auto max-w-7xl ">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
           title={item.title}
           description={item.description}
           header={item.header}
-          className={i === 1 || i === 2 ? "md:col-span-2" : ""}
+          className={
+            i === 1 || i === 2 || i === 5 ? "md:col-span-3" : "md:col-span-2"
+          }
         />
       ))}
     </BentoGrid>
   );
 }
-const Skeleton = () => (
-  <div className="flex h-full min-h-[6rem] w-full flex-1 rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>
-);
+
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-  },
-  {
-    title: "The Power of Communication",
+    title: "Intercontinental Sharm El Sheikh Hotel",
     description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+      "Luxurious resort offering exceptional amenities and services.",
+    header: "/images/Projects/Inter.png",
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
+    title: "GM Motors Egypt",
+    description: "General Motors Egypt 6th of October City Plant.",
+    header: "/images/Projects/GM.png",
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
+    title: "Afour Crystals Factory 1 & 2",
+    description: "Innovative factory specializing in crystal manufacturing.",
+    header: "/images/Projects/Asfour.png",
   },
   {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton />,
+    title: "Novotel Hotel Cairo Airport",
+    description: "Convenient and comfortable accommodation near the airport.",
+    header: "/images/Projects/Novotel.png",
+  },
+  {
+    title: "Pachin Paints Factory",
+    description: "Leading manufacturer of high-quality paints and coatings.",
+    header: "/images/Projects/Pachin.png",
+  },
+
+  {
+    title: "Al Ahram University",
+    description: "Renowned institution dedicated to academic excellence.",
+    header: "/images/Projects/Ahram.png",
   },
 ];

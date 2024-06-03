@@ -12,6 +12,11 @@ const ImageSlider = () => {
     "/images/Clients/Travco.png",
     "/images/Clients/Americana.png",
     "/images/Clients/TBS.png",
+    "/images/Clients/Metro.png",
+    "/images/Clients/EgyptAir.png",
+    "/images/Clients/ArmedForces.png",
+    "/images/Clients/Asfour.png",
+    "/images/Clients/ArabContractors.png",
   ];
 
   const settings = {
@@ -20,10 +25,13 @@ const ImageSlider = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
-    slidesToShow: 5, // Number of images shown at once
+    slidesToShow: 6, // Number of images shown at once
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
+    pauseOnHover: false,
+    className: "gap-[4rem]",
+
     responsive: [
       {
         breakpoint: 1024,
@@ -46,9 +54,9 @@ const ImageSlider = () => {
   return (
     <Slider {...settings} className="">
       {images.map((img, index) => (
-        <div key={index} className="">
+        <div key={index} className="px-2 md:px-2 lg:mx-0">
           <Image
-            className=" dark:bg-white"
+            className=" rounded-lg dark:bg-white"
             src={img}
             width={200}
             height={150}

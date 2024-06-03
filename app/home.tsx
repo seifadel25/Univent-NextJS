@@ -83,9 +83,12 @@ export default function HomePage() {
 
       {/* Projects */}
       <div className=" border-gray-200 bg-white px-4 pb-20 text-text-light dark:border-white dark:bg-[#40414f]/20 dark:text-text-dark">
-        <h2 className=" border-black/20 py-16 text-center  text-5xl font-bold dark:border-white ">
+        <h2 className=" border-black/20 pt-16 pb-8 text-center  text-5xl font-bold dark:border-white ">
           Our Projects
         </h2>
+        <p className="text-center text-3xl font-extralight pb-8">
+          We have great honor to supply Ventilation Fans for many great projects
+        </p>
         <div className="pt-8">
           <BentoGridDemo />
         </div>

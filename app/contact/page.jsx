@@ -1,7 +1,58 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 import BranchMap from "../components/BranchMap";
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSuccessMessage("");
+    setErrorMessage("");
+
+    const theFormData = JSON.stringify(formData);
+    console.log(theFormData);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: theFormData,
+      });
+
+      const data = await res.json(); // Parse JSON response
+
+      if (data.success) {
+        setSuccessMessage("Your message has been sent successfully!");
+        setFormData({ name: "", phone: "", email: "", message: "" });
+      } else {
+        setErrorMessage(
+          "Failed to send your message. Please try again." + data.error,
+        );
+      }
+    } catch (error) {
+      console.error("Error sending form data:", error);
+      setErrorMessage("An error occurred. Please try again later.");
+    }
+  };
   return (
     <div className="">
       <div className="">
@@ -35,7 +86,7 @@ export default function ContactPage() {
             />
           </div>
           <div className="w-7/12 bg-gray-200 py-10 dark:bg-[#262629]">
-            <form className="mx-8 w-3/4 space-y-4">
+            <form onSubmit={handleSubmit} className="mx-8 w-3/4 space-y-4">
               <div>
                 <label
                   htmlFor="name"
@@ -46,6 +97,8 @@ export default function ContactPage() {
                 <input
                   type="text"
                   id="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   name="name"
                   className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-light
                   focus:outline-none  focus:ring-indigo-500 dark:focus:border-primary-dark sm:text-sm"
@@ -61,6 +114,8 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="number"
+                  value={formData.phone}
+                  onChange={handleChange}
                   id="phone"
                   name="phone"
                   className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-light
@@ -77,6 +132,8 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   id="email"
                   name="email"
                   className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-light
@@ -93,6 +150,8 @@ export default function ContactPage() {
                 </label>
                 <textarea
                   id="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   name="message"
                   rows="4"
                   className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-light focus:outline-none focus:ring-indigo-500 dark:focus:border-primary-dark sm:text-sm"
@@ -108,16 +167,9 @@ export default function ContactPage() {
             </form>
           </div>
         </div>
+        {successMessage && <p className="text-green-500">{successMessage}</p>}
+        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
         <div className="relative flex w-10/12 rounded-lg ">
-          {/* <div className="w-full relative blur-[2px]">
-            <Image
-              src={"/images/Contact/Contact.jpg"}
-              width={1500}
-              height={1000}
-              alt="Contact"
-              className="sticky -mt-8 h-full w-full object-fill"
-            />
-          </div> */}
           <div
             className="w-full  py-10 md:hidden "
             style={{
@@ -126,7 +178,10 @@ export default function ContactPage() {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <form className="mx-8 w-3/4 space-y-4 rounded-xl bg-gray-200/80 px-8 py-4 dark:bg-[#262629]/80">
+            <form
+              onSubmit={handleSubmit}
+              className="mx-8 w-3/4 space-y-4 rounded-xl bg-gray-200/80 px-8 py-4 dark:bg-[#262629]/80"
+            >
               <div>
                 <label
                   htmlFor="name"
@@ -136,6 +191,8 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="text"
+                  value={formData.name}
+                  onChange={handleChange}
                   id="name"
                   name="name"
                   className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-light
@@ -151,6 +208,8 @@ export default function ContactPage() {
                   Phone Number
                 </label>
                 <input
+                  value={formData.phone}
+                  onChange={handleChange}
                   type="number"
                   id="phone"
                   name="phone"
@@ -168,6 +227,8 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   id="email"
                   name="email"
                   className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-light
@@ -184,6 +245,8 @@ export default function ContactPage() {
                 </label>
                 <textarea
                   id="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   name="message"
                   rows="4"
                   className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-primary-light focus:outline-none focus:ring-indigo-500 dark:focus:border-primary-dark sm:text-sm"

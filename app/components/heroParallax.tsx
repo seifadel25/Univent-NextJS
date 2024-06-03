@@ -21,6 +21,7 @@ export const HeroParallax = ({
 }) => {
   const firstRow = products.slice(0, 4);
   const secondRow = products.slice(4, 8);
+  const thirdRow = products.slice(8, 12);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -56,7 +57,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="relative -mt-8 flex h-[260vh] flex-col self-auto  overflow-hidden bg-background-light py-40 antialiased [perspective:1000px] [transform-style:preserve-3d] dark:bg-[#40414f]/20"
+      className="relative -mt-8 flex h-[280vh] flex-col self-auto  overflow-hidden bg-background-light py-40 antialiased [perspective:1000px] [transform-style:preserve-3d] dark:bg-[#40414f]/20"
     >
       <Header />
       <motion.div
@@ -83,6 +84,16 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateXReverse}
+              key={index}
+              opacity={opacity}
+            />
+          ))}
+        </motion.div>
+        <motion.div className="mb-20 flex flex-row-reverse space-x-10 space-x-reverse">
+          {thirdRow.map((product, index) => (
+            <ProductCard
+              product={product}
+              translate={translateX}
               key={index}
               opacity={opacity}
             />
@@ -149,7 +160,7 @@ export const ProductCard = ({
         />
       </Link>
       <div className="pointer-events-none absolute inset-0 h-full w-full bg-background-light/40 opacity-0 group-hover/product:opacity-80 dark:bg-black/50"></div>
-      <h2 className="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">
+      <h2 className="absolute bottom-4 left-4 font-semibold text-black opacity-0 group-hover/product:opacity-100 dark:text-white">
         {product.title}
       </h2>
     </motion.div>

@@ -11,19 +11,40 @@ export default function About() {
       title: "Innovation and Mechanization",
       description:
         "At Univent, we believe in staying ahead of the curve. Our factory is equipped with state-of-the-art machinery, ensuring that we can produce the highest quality products efficiently. We regularly invest in new technologies to maintain our competitive edge.",
-      content: <Image src="./images/About/Modern.avif" alt="Introduction" />,
+      content: (
+        <Image
+          src="/images/About/Modern.avif"
+          width={600}
+          height={600}
+          alt="Introduction"
+        />
+      ),
     },
     {
       title: "Extensive Experience",
       description:
         "With over four decades of experience, Univent has built a reputation for reliability and expertise. Our long history in the industry means we understand the complexities of ventilation systems and can provide solutions that meet and exceed customer expectations.",
-      content: <Image src="./images/About/Exp.png" alt="Features" />,
+      content: (
+        <Image
+          src="/images/About/Exp.png"
+          width={600}
+          height={600}
+          alt="Features"
+        />
+      ),
     },
     {
       title: "Unified Teamwork",
       description:
         "Our success is built on the strength of our team. From the sales and HR departments to our engineers and technicians, everyone at Univent works together with a common goal. This cohesive approach ensures that we deliver the best possible products and services to our customers.",
-      content: <Image src="./images/About/Teamwork.jpg" alt="Conclusion" />,
+      content: (
+        <Image
+          src="/images/About/Teamwork.jpg"
+          width={600}
+          height={600}
+          alt="Conclusion"
+        />
+      ),
     },
   ];
 
