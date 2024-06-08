@@ -9,8 +9,8 @@ export default function HomePage() {
   return (
     <div>
       <div className="">
-        <HeroHighlight className="-mt-4 rounded-3xl bg-gray-300/50 p-4 text-center text-4xl leading-loose text-text-light dark:bg-[#262629]/40 dark:text-text-dark  md:text-5xl lg:text-6xl ">
-          <span className="text-7xl font-bold">Univent</span>
+        <HeroHighlight className="-mt-4 rounded-3xl bg-gray-300/50 p-4 text-center text-4xl leading-loose text-text-light dark:bg-[#262629]/40  dark:text-text-dark  md:text-5xl lg:text-6xl ">
+          <span className="text-7xl font-semibold font-DM  ">UNIVENT</span>
           <br /> Quality Is Everything.
           <Highlight className="leading-loose">Quality you can Trust</Highlight>
         </HeroHighlight>
@@ -30,7 +30,7 @@ export default function HomePage() {
             </h3>
           </div>
           <div className="md:w-1/2">
-            <p className="px-20 text-2xl">
+            <p className="px-10 md:px-20 text-2xl">
               Univent is dedicated to elevating Egyptian products to the
               pinnacle of quality and craftsmanship. We aim to make &quot;Made
               in Egypt&quot; synonymous with excellence, recognized and trusted
@@ -67,7 +67,7 @@ export default function HomePage() {
               Our Mission
             </h3>
           </div>
-          <div className="px-20 text-2xl md:w-1/2">
+          <div className="px-10 md:px-20 text-2xl md:w-1/2">
             <p>
               Since our founding in 1979, Univent has grown to become a leader
               in the ventilation fan industry. We continually strive to innovate

@@ -18,14 +18,16 @@ import DarkModeToggle from "./DarkModeToggle";
 export default function NavbarComp() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["home", "products", "Clients", "About us", "Contact us"];
   return (
-    <Navbar className="dark:bg-[#40414f]/20  py-2 md:flex">
-      <div className="w-full md:mr-4 md:w-3/12">
-        <NavbarContent>
+    <Navbar
+      className="w-full  flex-wrap px-0 py-2 dark:bg-[#40414f]/20 md:flex md:justify-start"
+      maxWidth="full"
+    >
+      <div className="w-full md:w-2/12">
+        <NavbarContent className=" ">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="p-2 md:hidden"
+            className="p-4 md:mr-4 md:hidden"
           />
           <NavbarBrand>
             <Link href="/">
@@ -34,8 +36,8 @@ export default function NavbarComp() {
           </NavbarBrand>
         </NavbarContent>
       </div>
-      <div className="w-4/12">
-        <NavbarContent className="hidden w-3/6 gap-4 md:flex" justify="center">
+      <div className="hidden w-full  items-center justify-center gap-4 md:flex">
+        <NavbarContent className="" justify="center">
           <NavbarItem>
             <Link
               className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
@@ -77,10 +79,18 @@ export default function NavbarComp() {
               About us
             </Link>
           </NavbarItem>
+          <NavbarItem>
+            <Link
+              className=" text-text-light dark:text-text-dark md:text-sm lg:text-xl"
+              href="/Find"
+            >
+              Find us
+            </Link>
+          </NavbarItem>
         </NavbarContent>
       </div>
-      <div className="w-full md:w-3/12">
-        <NavbarContent>
+      <div className="flex w-2/12 justify-end">
+        <NavbarContent justify="end">
           <NavbarItem className="overflow-hidden rounded-lg ">
             <Button
               as={Link}
@@ -135,6 +145,14 @@ export default function NavbarComp() {
             href="/About"
           >
             About us
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="py-2 text-xl text-text-light dark:text-text-dark"
+            href="/Find"
+          >
+            Find us
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>
