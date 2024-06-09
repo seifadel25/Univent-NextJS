@@ -45,7 +45,7 @@ export const HeroHighlight = ({
         bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-900 via-sky-500 to-blue-700
       </div> */}
 
-      <div className="pointer-events-none absolute inset-0 dark:bg-[#40414f]/20 blur-[5px]">
+      <div className="pointer-events-none absolute inset-0 dark:bg-[#40414f]/20 blur-[1px] md:blur-[1.5px]">
         <ImagesSlider
           images={[
             "/images/Hero/jpeg-optimizer_5.png",
