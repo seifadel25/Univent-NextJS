@@ -12,7 +12,7 @@ export default function HomePage() {
         <HeroHighlight className="-mt-4 rounded-3xl bg-gray-300/50 p-4 text-center text-4xl leading-loose text-text-light dark:bg-[#262629]/40  dark:text-text-dark  md:text-5xl lg:text-6xl ">
           <span className="text-7xl font-semibold font-DM  ">UNIVENT</span>
           <br /> Quality Is Everything.
-          <Highlight className="leading-loose">Quality you can Trust</Highlight>
+          <span className="leading-loose">Quality you can Trust</span>
         </HeroHighlight>
       </div>
 
