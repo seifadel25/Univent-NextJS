@@ -10,7 +10,7 @@ export default function HomePage() {
     <div>
       <div className="">
         <HeroHighlight className="-mt-4 rounded-3xl bg-gray-300/50 p-4 text-center text-4xl leading-loose text-text-light dark:bg-[#262629]/40  dark:text-text-dark  md:text-5xl lg:text-6xl ">
-          <span className="text-7xl font-semibold font-DM  ">UNIVENT</span>
+          <span className="font-DM text-7xl font-semibold  ">UNIVENT</span>
           <br /> Quality Is Everything.
           <span className="leading-loose">Quality you can Trust</span>
         </HeroHighlight>
@@ -23,14 +23,14 @@ export default function HomePage() {
         <div className="flex flex-col items-center justify-between gap-10 py-10 md:flex-row md:py-28">
           <div
             className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
-            style={{ backgroundImage: "url('/images/About/Vision.jpg')" }}
+            style={{ backgroundImage: "url('/images/About/About1.jpg')" }}
           >
             <h3 className="h-fit rounded  bg-white bg-opacity-75 p-3 dark:bg-slate-800 dark:bg-opacity-75">
               Our Vision
             </h3>
           </div>
           <div className="md:w-1/2">
-            <p className="px-10 md:px-20 text-2xl">
+            <p className="px-10 text-2xl md:px-20">
               Univent is dedicated to elevating Egyptian products to the
               pinnacle of quality and craftsmanship. We aim to make &quot;Made
               in Egypt&quot; synonymous with excellence, recognized and trusted
@@ -51,7 +51,7 @@ export default function HomePage() {
           </div>
           <div
             className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
-            style={{ backgroundImage: "url('/images/About/Mission.jpg')" }}
+            style={{ backgroundImage: "url('/images/About/About2.jpg')" }}
           >
             <h3 className="h-fit rounded  bg-white bg-opacity-75 p-3 dark:bg-slate-800 dark:bg-opacity-75">
               Our Mission
@@ -61,13 +61,13 @@ export default function HomePage() {
         <div className="flex flex-col items-center justify-between gap-10 py-10 md:hidden md:flex-row md:py-28">
           <div
             className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
-            style={{ backgroundImage: "url('/images/About/Mission.jpg')" }}
+            style={{ backgroundImage: "url('/images/About/About2.jpg')" }}
           >
             <h3 className="h-fit rounded  bg-white bg-opacity-75 p-3 dark:bg-slate-800 dark:bg-opacity-75">
               Our Mission
             </h3>
           </div>
-          <div className="px-10 md:px-20 text-2xl md:w-1/2">
+          <div className="px-10 text-2xl md:w-1/2 md:px-20">
             <p>
               Since our founding in 1979, Univent has grown to become a leader
               in the ventilation fan industry. We continually strive to innovate
@@ -83,10 +83,10 @@ export default function HomePage() {
 
       {/* Projects */}
       <div className=" border-gray-200 bg-white px-4 pb-20 text-text-light dark:border-white dark:bg-[#40414f]/20 dark:text-text-dark">
-        <h2 className=" border-black/20 pt-16 pb-8 text-center  text-5xl font-bold dark:border-white ">
+        <h2 className=" border-black/20 pb-8 pt-16 text-center  text-5xl font-bold dark:border-white ">
           Our Projects
         </h2>
-        <p className="text-center text-3xl font-extralight pb-8">
+        <p className="pb-8 text-center text-3xl font-extralight">
           We have great honor to supply Ventilation Fans for many great projects
         </p>
         <div className="pt-8">

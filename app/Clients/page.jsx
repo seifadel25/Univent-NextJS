@@ -70,15 +70,81 @@ const Clients = [
     title: "TBS",
     logo: "/images/Clients/Clients/TBS 1.png",
   },
+  {
+    title: "Carefour",
+    logo: "/images/Clients/Clients/Carrefour.png",
+  },
+  {
+    title: "Bank Misr",
+    logo: "/images/Clients/Clients/BankMisr.png",
+  },
+  {
+    title: "CIB",
+    logo: "/images/Clients/Clients/CIB.png",
+  },
+  {
+    title: "Knauf",
+    logo: "/images/Clients/Clients/Knauf.png",
+  },
+  {
+    title: "Alexednria Contruction Company",
+    logo: "/images/Clients/Clients/Alex.png",
+  },
+  {
+    title: "Hassan Allam Holding",
+    logo: "/images/Clients/Clients/Hassan.png",
+  },
+  {
+    title: "New Giza",
+    logo: "/images/Clients/Clients/NewGiza.png",
+  },
+  {
+    title: "Redcon Construction Company",
+    logo: "/images/Clients/Clients/Redcon.png",
+  },
+  {
+    title: "Concrete Plus",
+    logo: "/images/Clients/Clients/ConcretePlus.png",
+  },
+  {
+    title: "Gama Construction Company",
+    logo: "/images/Clients/Clients/Gama.png",
+  },
+  {
+    title: "ECS-Energy and Contracting Solutions",
+    logo: "/images/Clients/Clients/ECS.png",
+  },
+  {
+    title: "Solera ElSewedy",
+    logo: "/images/Clients/Clients/Solera.png",
+  },
+  {
+    title: "Ecologi",
+    logo: "/images/Clients/Clients/Ecologi.png",
+  },
+  {
+    title: "Sodic",
+    logo: "/images/Clients/Clients/Sodic.png",
+  },
+  {
+    title: "Rowad Modern Engineering",
+    logo: "/images/Clients/Clients/Rowad.png",
+  },
+  {
+    title: "Concord Bulding Sustainable Development",
+    logo: "/images/Clients/Clients/Concord.png",
+  },
 ];
 
 const ClientCards = ({ title, logo }) => {
   return (
-    <div className="col-span-12 mx-auto w-[70dvw] rounded-lg bg-white p-4 shadow-2xl transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-black hover:dark:shadow-white dark:shadow-xl sm:col-span-12 md:col-span-6 md:w-[40dvw] lg:col-span-3 lg:w-[20dvw]">
+    <div className="col-span-12 mx-auto w-[70dvw] rounded-lg bg-white p-4 shadow-2xl transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-black dark:shadow-xl hover:dark:shadow-white sm:col-span-12 md:col-span-6 md:w-[40dvw] lg:col-span-3 lg:w-[20dvw]">
       <div className="flex justify-center ">
         <Image width={250} height={275} src={logo} alt={title} className="" />
       </div>
-      <h1 className="mt-2 text-black text-center text-2xl font-semibold">{title}</h1>
+      <h1 className="mt-2 text-center text-2xl font-semibold text-black">
+        {title}
+      </h1>
     </div>
   );
 };
@@ -102,7 +168,7 @@ function Page() {
         </h1>
       </div>
       <div className="-mt-32 ">
-        <div className="grid grid-cols-12 gap-4 bg-gray-100/40 dark:bg-[#40414f]/20 p-6 md:gap-10 lg:gap-20 ">
+        <div className="grid grid-cols-12 gap-4 bg-gray-100/40 p-6 dark:bg-[#40414f]/20 md:gap-10 lg:gap-20 ">
           {Clients.map((client, index) => (
             <ClientCards key={index} title={client.title} logo={client.logo} />
           ))}

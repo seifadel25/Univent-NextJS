@@ -17,6 +17,8 @@ const ImageSlider = () => {
     "/images/Clients/ArmedForces.png",
     "/images/Clients/Asfour.png",
     "/images/Clients/ArabContractors.png",
+    "/images/Clients/Carrefour.png",
+    "/images/Clients/Sodic.png",
   ];
 
   const settings = {

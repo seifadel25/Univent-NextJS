@@ -67,8 +67,8 @@ export default function About() {
         {/*         Large */}
         <div className="hidden flex-col items-center justify-between gap-10 py-10 md:flex md:flex-row md:py-28">
           <div
-            className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
-            style={{ backgroundImage: "url('/images/About/Vision.jpg')" }}
+            className="flex h-[400px] w-full items-center justify-center bg-contain bg-no-repeat bg-center text-5xl md:w-1/2"
+            style={{ backgroundImage: "url('/images/About/About1.jpg')" }}
           ></div>
           <div className="md:w-1/2">
             <p className="px-4 text-2xl">
@@ -91,7 +91,7 @@ export default function About() {
           </div>
           <div
             className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
-            style={{ backgroundImage: "url('/images/About/Vision.jpg')" }}
+            style={{ backgroundImage: "url('/images/About/About1.jpg')" }}
           ></div>
         </div>
         <h2 className="pt-16 text-center text-5xl font-semibold">
@@ -110,8 +110,8 @@ export default function About() {
             </p>
           </div>
           <div
-            className="flex h-[400px]  w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
-            style={{ backgroundImage: "url('/images/About/Mission.jpg')" }}
+            className="flex h-[400px]  w-full items-center justify-center bg-contain bg-no-repeat bg-center text-5xl md:w-1/2"
+            style={{ backgroundImage: "url('/images/About/About2.jpg')" }}
           ></div>
         </div>
       </div>
