@@ -90,7 +90,7 @@ export default function About() {
             </p>
           </div>
           <div
-            className="flex h-[400px] w-full items-center justify-center bg-cover bg-center text-5xl md:w-1/2"
+            className="flex h-[400px] w-full items-center justify-center bg-contain bg-no-repeat bg-center text-5xl md:w-1/2"
             style={{ backgroundImage: "url('/images/About/About1.jpg')" }}
           ></div>
         </div>
