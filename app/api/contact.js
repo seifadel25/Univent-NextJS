@@ -6,20 +6,20 @@ export default async (req, res) => {
 
     // Create a Nodemailer transporter using SMTP
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com", // Replace with your SMTP server
+      host: process.env.SMTP_HOST, // Replace with your SMTP server
       port: 587, // Replace with your SMTP port
       secure: false,
       auth: {
         //name:UniTest
-        user: "seifadel25555@gmail.com", // Replace with your email
-        pass: "wizx hmtf anhl oani", // Replace with your email password
+        user: process.env.EMAIL_USER, // Replace with your email
+        pass: process.env.EMAIL_PASS, // Replace with your email password
       },
     });
 
     // Setup email data
     const mailOptions = {
       from: email,
-      to: "seifadel25@gmail.com", // Replace with the recipient's email
+      to: "seifadel25@gmail.com, ehab@univent.com.eg", // Replace with the recipient's email
       subject: "Contact Request from Univent's website from " + name,
       text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
     };

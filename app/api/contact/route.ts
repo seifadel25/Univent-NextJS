@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
   }
   const mailOptions = {
     from: email,
-    to: "seifadel25@gmail.com",
+    to: "seifadel25@gmail.com, ehab@univent.com.eg",
     subject: "Contact Request from Univent's website from " + name,
     text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
   };
