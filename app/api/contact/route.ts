@@ -20,10 +20,12 @@ export async function POST(req: NextRequest) {
       { status: 400 }, // Bad Request status code
     );
   }
+  // Strip CR/LF from user input that ends up in email headers (header injection).
+  const oneLine = (value: unknown) => String(value).replace(/[\r\n]+/g, " ").trim();
   const mailOptions = {
-    from: email,
+    from: oneLine(email),
     to: "seifadel25@gmail.com, ehab@univent.com.eg",
-    subject: "Contact Request from Univent's website from " + name,
+    subject: "Contact Request from Univent's website from " + oneLine(name),
     text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
   };
 
